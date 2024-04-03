@@ -1,0 +1,86 @@
+// const header = document.querySelector("header");
+// const headerHeight = header.offsetHeight;
+
+
+// function adjustHeader() {
+//     header.classList.toggle('scrolled', window.scrollY > 0);
+//     if (window.scrollY >= 100) {
+//         header.classList.add('scrolled');
+//         header.style.fontSize = '10px'
+//     } else {
+//         header.classList.remove('scrolled');
+//     }
+
+//     document.body.style.paddingTop = headerHeight + 'px';
+// }
+
+// adjustHeader();
+
+// window.addEventListener('scroll', adjustHeader);
+
+// const nav = document.querySelector('header');
+
+// window.addEventListener('scroll', function() {
+//   const offset = window.pageYOffset;
+
+//   if(offset > 100) {
+//     nav.classList.add('scroll')
+//   } else {
+//     nav.classList.remove('scroll')
+//   }
+// })
+
+
+// (() => {
+//   'use strict'
+//   let refOffest = 0;
+//   const headerHeight = 77;
+//   const header = document.querySelector('header');
+//   const headerContainer = document.querySelector('.header-container');
+
+//   const handler = () => {
+//     const newOffset = window.scrollY || window.pageYOffset;
+
+//     if (newOffset > headerHeight) {
+//       if (newOffset > refOffest) {
+//         header.classList.remove('animateIn');
+//         header.classList.add('animateOut');
+//       } else {
+//         header.classList.add('animateOut');
+//         header.classList.remove('animateIn');
+//       }
+//       headerContainer.style.background = 'white'
+//       refOffest = newOffset;
+//     } else {
+//       headerContainer.style.backgroundColor = 'green';
+//     }
+//   };
+
+//   window.addEventListener('scroll', handler, false)
+// }) ();
+
+
+  // gsap.set('header', {
+  //   backgroundColor: 'rgba(0, 0, 0, 0)'
+  // })
+
+  // const tl = gsap.timeline({
+  //   ScrollTrigger: {
+  //     start: 'top+=100',
+  //     end: '+=1',
+  //     toggleActions: 'play none none reverse',
+  //     scrub: true
+  //   }
+  // })
+
+  // tl.to('header', {
+  //   fontsize: '10px'
+  // })
+
+
+  gsap.set('header', {
+    bakground: rgba(0, 0, 0, 0)
+  })
+  
+
+// headerScroll();

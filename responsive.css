@@ -1,0 +1,17 @@
+/* <<----Desctop_Brakepoint---->> */
+
+@media (max-width: 1290px) {
+    .Home-content-left {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .Home-content-left {
+        width: 38%;
+    }
+
+    .Home-content-left h2 {
+        font-size: 55px;
+    }
+}
